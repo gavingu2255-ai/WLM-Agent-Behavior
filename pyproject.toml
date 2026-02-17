@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=65.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wlm-agent-behavior"
+version = "0.1.0"
+description = "Convert WLM structural graphs into deterministic agent behavior plans."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+
+authors = [
+    { name = "Wujie Gu" }
+]
+
+keywords = [
+    "WLM",
+    "agent-behavior",
+    "structural-reasoning",
+    "world-models",
+    "embodied-ai",
+    "deterministic-graphs"
+]
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/YOUR_USERNAME/wlm-agent-behavior"
+Documentation = "https://github.com/YOUR_USERNAME/wlm-agent-behavior/tree/main/docs"
+Source = "https://github.com/YOUR_USERNAME/wlm-agent-behavior"
+Issues = "https://github.com/YOUR_USERNAME/wlm-agent-behavior/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.scripts]
+wlm-agent-behavior = "wlm_agent_behavior.cli:main"
